@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "knex:migrate": "knex migrate:latest",
     "start": "node ./build/server.js",
     "build": "tsc",
     "dev": "ts-node-dev ./src/server.ts"
@@ -13,7 +14,7 @@
     "express": "^4.17.3",
     "http-status-codes": "^2.2.0",
     "knex": "^1.0.7",
-    "sqlite3": "^5.0.4"
+    "pg": "^8.7.3"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
