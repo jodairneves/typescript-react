@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "knex:rollback": "knex migrate:rollback",
     "knex:migrate": "knex migrate:latest",
     "start": "node ./build/server.js",
     "build": "tsc",
